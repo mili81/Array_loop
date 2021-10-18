@@ -8,7 +8,7 @@ public class Assignment2 {
         countOdd(myArray);
         sameValue(myArray);
         eachSecond(myArray);
-        //noinspection ResultOfMethodCallIgnored
+
         // // TODO: 18.10.21 ask Edgars about this.
         averageValue(myArray);
         smaller(myArray);
@@ -82,13 +82,15 @@ public class Assignment2 {
 
     public static void smaller(int[] myArray){
         int establish = 0;
+        double avgVariable = averageValue(myArray);
         for (int i = 0; i < myArray.length; i++) {
-            if (averageValue(myArray) > myArray[i]){
+            if (avgVariable> myArray[i]){
                 establish++;
 
             }
-            System.out.println("There are" + establish + " elements in this Array, smaller than average" + "(" + averageValue(myArray) + ").");
+
         }
+        System.out.println("There are" + establish + " elements in this Array, smaller than average" + "(" + avgVariable + ").");
     }
 }
 
