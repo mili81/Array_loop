@@ -10,7 +10,7 @@ public class Assignment2 {
         eachSecond(myArray);
 
         // // TODO: 18.10.21 ask Edgars about this.
-        averageValue(myArray);
+        //averageValue(myArray);
         smaller(myArray);
     }
 
